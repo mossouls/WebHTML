@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Encuesta de pelismalas</title>
+</head>
+	
+
+<body>	
+	<table align="center">
+		<tr>
+			<td align="center">
+				<img src="img\encuesta1.png" width="300px">
+			</td>
+		</tr>
+
+	</table>
+
+
+	<form>
+	
+		<fieldset>	
+		
+			<legend><font face="sans-serif" size="6" color="#455E89"><b>Encuesta: las pelis más malas</b></font>
+				
+			</legend>
+			
+			<fieldset>
+			
+				<legend>
+					<font face="sans-serif" size="6" color="#3a5252">	<b>Sobre <font face="sans-serif" size="6" color="#892B64">ti</font></b>
+					</font>				
+				</legend>
+
+
+				<p>
+					<label for="name">
+						<font face="sans-serif" size="5" color="#3a5252">Nombre:</font>
+					</label>
+					
+					<input type="text" name="Nombre" id="nombre" maxlength="20" required="required" placeholder="Introduce tu nombre"/>	
+				</p>	
+				
+				<p>
+					<label for="edad">
+						<font face="sans-serif" size="5" color="#3a5252">Fecha de nacimiento:</font>
+					</label>
+
+				
+					<input type="date" name="edad" size="20" required="required">
+				</p>			
+				<p>
+					<label for="email">					
+						<font face="sans-serif" size="5" color="#3a5252">Correo electrónico:</font>
+					</label>
+				
+					<input type="email" id="email" name="email" placeholder="Introduce tu correo" required="required"/>	
+				</p>			
+				
+				<p>
+					<font face="sans-serif" size="5" color="#3a5252">Sexo</font>
+				</p>				
+				
+				<font face="sans-serif" size="4" color="#3a5252">
+					<input type="radio" name="sexo" value="hombre"/> Hombre
+					<input type="radio" name="sexo" value="mujer"/> Mujer
+					<input type="radio" name="sexo" value="ambiguo"/> Prefiero no decirlo
+				</font>	
+
+				<br/>	
+				
+				<p>
+					<font face="sans-serif" size="5" color="#3a5252">Número de teléfono</font>
+				</p>				
+				
+				<p>
+					<font face="sans-serif" size="4" color="#3a5252">Fijo: 
+						<input type="tel" name="tel_fijo" placeholder="Teléfono fijo" size="9" /></font>
+				</p>
+
+				<p>
+					<font face="sans-serif" size="4" color="#3a5252">Móvil: 
+						<input type="tel" name="tel_movil" placeholder="Teléfono móvil" size="12"/></font>
+				</p>	
+				
+				<p>
+					<font face="sans-serif" size="5" color="#3a5252">¿Qué conocimiento tienes (o crees que tienes) sobre cine?</font>
+				</p>
+
+				<input type="range" name="conocimiento" min="1" max="10" step="1" list="conocimiento">
+					<datalist id="conocimiento">
+						<option value="1" label="Ninguno"></option>
+						<option value="2" label="Casi ninguno"></option>
+						<option value="4" label="Poquito"></option>
+						<option value="5" label="Algo sé"></option>
+						<option value="5" label="Me defiendo"></option>
+						<option value="5" label="Me defiendo bien"></option>
+						<option value="7" label="Bastante"></option>
+						<option value="8" label="Mucho"></option>
+						<option value="9" label="Casi todo"></option>
+						<option value="10" label="Soy un cinéfilo"></option>
+					</datalist>
+
+				<p>
+					<font face="sans-serif" size="5" color="#3a5252">¿Hace cuanto no ves una peli mala entera?</font>
+				</p>
+
+				<p>
+					<font face="sans-serif" size="4" color="#3a5252"><input type="radio" name="tiempo" value="sem_pasada">La semana pasada</font>
+				</p>
+
+				<p>
+					<font face="sans-serif" size="4" color="#3a5252"><input type="radio" name="tiempo" value="mes_pasado"> El mes pasado</font>
+				</p>
+
+				<p>
+					<font face="sans-serif" size="4" color="#3a5252"><input type="radio" name="tiempo" value="anio_pasado"> Hace años que no veo pelis malas</font>
+				</p>
+
+				<p>
+					<font face="sans-serif" size="4" color="#3a5252"><input type="radio" name="tiempo" value="hoy"> He visto una hoy</font>
+				</p>
+
+
+
+			</fieldset>
+			
+			<fieldset>
+				<legend><font face="sans-serif" size="6" color="#3a5252"><b>Sobre tus <font face="sans-serif" size="6" color="#892B64">pelis malas</font></b></font></legend>
+
+						<font face="sans-serif" size="5" color="#3a5252">¿Cuál es la década con más pelis malas?</font>
+					
+						<p><font face="sans-serif" size="4" color="#3a5252"><input type="radio" name="epoca" value="actual">La actualidad. Ya no se hace nada bueno.</font></p>
+						<p><font face="sans-serif" size="4" color="#3a5252"><input type="radio" name="epoca" value="90">Los 90</font></p>
+						<p><font face="sans-serif" size="4" color="#3a5252"><input type="radio" name="epoca" value="80">Los 80</font></p>
+						<p><font face="sans-serif" size="4" color="#3a5252"><input type="radio" name="epoca" value="70">Los 70</font></p>
+						<p><font face="sans-serif" size="4" color="#3a5252"><input type="radio" name="epoca" value="50">Los 50</font></p>
+						<p><font face="sans-serif" size="4" color="#3a5252"><input type="radio" name="epoca" value="antes_50">Anterior a los 50. Muy cutres para mi.</font></p>
+						
+					<p><font face="sans-serif" size="5" color="#3a5252">Marca el género o géneros que más pelis malas produce</font></p>
+						<p><font face="sans-serif" size="4" color="#3a5252"><input type="checkbox" name="gen" value="accion">Acción</font></p>
+						<p><font face="sans-serif" size="4" color="#3a5252"><input type="checkbox" name="gen" value="fantasía">Fantasía</font></p>
+						<p><font face="sans-serif" size="4" color="#3a5252"><input type="checkbox" name="gen" value="drama">Drama</font></p>
+						<p><font face="sans-serif" size="4" color="#3a5252"><input type="checkbox" name="gen" value="comedia">Comedia</font></p>
+						<p><font face="sans-serif" size="4" color="#3a5252"><input type="checkbox" name="gen" value="terror">Terror</font></p>	
+				
+					<p><font face="sans-serif" size="5" color="#3a5252">¿Qué país produce más pelis malas?</font></p>	
+					<select>
+						<optgroup label="Asia">
+							<option value="china">China</option>
+							<option value="korea">Korea</option>
+							<option value="japon">Japón</option>
+						</optgroup>
+						<optgroup label="Europa">
+							<option value="espana">España</option>
+							<option value="francia">Francia</option>
+							<option value="italia">Italia</option>
+						</optgroup>	
+						<optgroup label="América">
+							<option value="eu">Estados Unidos</option>
+							<option value="argentina">Argentina</option>
+							<option value="canada">Canadá</option>
+						</optgroup>	
+					</select>
+
+					<p>
+						<font face="sans-serif" size="5" color="#3a5252">¿Qué piensas de las secuelas?</font>
+					</p>
+
+					<input type="image" name="notbad" value="bien" src="img\notbad.png" width="100px" height="100px" title="No están mal" alt="Buenas">
+					<input type="image" name="malisimas" value="malisimas" src="img\mala.png" width="100px" height="100px" title="Son malísimas" alt="malisimas">
+
+					<p>
+						<font face="sans-serif" size="5" color="#3a5252">
+							¿Crees que falta alguna peli mala en nuestra web?
+						</font>
+					</p>
+
+					<p>
+						<font face="sans-serif" size="4" color="#3a5252">
+							<input type="radio" name="falta" value="Falta" required="required" id="si_falta">
+								<label for="si_falta">
+									Sí, hay más pelis malas
+								</label>
+						</font>
+					</p>
+
+					<p>
+						<font face="sans-serif" size="4" color="#3a5252">
+							<input type="radio" name="falta" value="no_falta" id="no_falta">
+								<label for="no_falta">
+									No, estoy servid@
+								</label>
+						</font>
+					</p>
+
+					<p>
+						<label for="peli1"><font face="sans-serif" size="5" color="#3a5252">¿Qué películas añadirías a nuestra web?</font></label>
+					</p>
+
+					<p>
+						<input type="text" name="peli1" placeholder="Introduce una peli mala" id="peli1">
+					</p>
+
+					<p>
+						<input type="text" name="peli2" placeholder="Introduce una peli mala">
+					</p>
+
+					<p>
+						<input type="text" name="peli3" placeholder="Introduce una peli mala">
+					</p>
+
+					<p>
+						<input type="text" name="peli5" placeholder="Introduce una peli mala">
+					</p>
+
+					<p>
+						<font face="sans-serif" size="5" color="#3a5252"><label for="quitar">¿Qué películas quitarías de nuestra web?</label></font>
+					</p>
+
+					<p>
+						<input type="text" name="quitar" placeholder="Introduce el título" id="quitar" maxlength="50">
+					</p>
+
+					<p>
+						<font face="sans-serif" size="4" color="#3a5252"><i>Explica por qué esa película no es mala</i></font>
+					</p>
+
+					<textarea rows="6" cols="60"></textarea>
+
+			</fieldset>
+
+		</fieldset>	
+
+	</form>
+
+	<br/>
+
+	<table>
+		<tr>
+			<td bgcolor="#A01A58">
+				<p align="center"><b><font face="sans-serif" size="5" color="#ffffff">¡Eso es todo!</font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#0091AD">
+				<p><font face="sans-serif" size="4" color="#ffffff">Esperamos que, con tu ayuda, nuestra página sea un poco más divertida. Si tienes algún comentario, no olvides escribirnos a nuestro correo <i>pelismalas@gmail.com</i></font>.</p>
+			</td>
+		</tr>
+	</table>	
+	
+		
+
+	<font face="sans-serif" size="5" color="#3a5252">
+		<a href="#">Volver al principio</a>
+	</font>
+
+	
+</body>
+</html>
